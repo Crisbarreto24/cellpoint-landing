@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>CellPoint</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body class="min-h-[100vh] bg-gradient-to-b from-blue-600 to-purple-700 bg-fixed bg-cover text-white font-sans">
+
+  <header class="flex items-center justify-between px-20 py-0 top-0 relative">
+
+    <section class="flex items-center gap-3 md:gap-4">
+      <img src="logo2.png" alt="CellPoint" class="w-12 h-12 md:w-20 md:h-20 object-contain">
+      <h1 class="text-2xl font-semibold leading-none">CellPoint</h1>
+    </section>
+
+    <nav class="hidden md:flex space-x-8 text-sm font-medium text-xl">
+      <a href="index.html" class="hover:text-pink-400 transition">Inicio</a>
+      <a href="sobrenosotros.html" class="hover:text-pink-400 transition">Sobre Nosotros</a>
+      <a href="tienda.html" class="hover:text-pink-400 transition">Tienda</a>
+      <a href="servicios.html" class="hover:text-pink-400 transition">Servicios</a>
+      <a href="contactanos.html" class="hover:text-pink-400 transition">Contactanos</a>
+    </nav>
+
+    <section class="flex items-center space-x-4">
+      <button class="p-2 rounded-full hover:bg-indigo-400/40 transition">
+        <i class="fa-solid text-2xl fa-bag-shopping"></i>
+      </button>
+      <button class="p-2 rounded-full hover:bg-indigo-400/40 transition">
+        <i class="fa-solid fa-bell text-white text-2xl"></i>
+      </button>
+
+      <button id="menu-btn" class="block md:hidden p-2 rounded hover:bg-indigo-400/40 transition">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </section>
+
+    <nav id="mobile-menu"
+      class="hidden absolute top-full left-0 w-full bg-[#111827]/95 flex flex-col items-center space-y-4 py-6 text-lg font-medium md:hidden z-50">
+      <a href="index.html" class="hover:text-pink-400 transition">Inicio</a>
+      <a href="sobrenosotros.html" class="hover:text-pink-400 transition">Sobre Nosotros</a>
+      <a href="tienda.html" class="hover:text-pink-400 transition">Tienda</a>
+      <a href="servicios.html" class="hover:text-pink-400 transition">Servicios</a>
+      <a href="contactanos.html" class="hover:text-pink-400 transition">Contactanos</a>
+    </nav>
+  </header>
+
+
+  <section class="h-screen flex items-center justify-center px-6 py-0 md:px-20 md:py-20 relative">
+    <section class="w-full h-full grid md:grid-cols-2 bg-white/30 rounded-xl">
+      <section class="absolute -left-6 -top-6 w-16 h-10 bg-pink-400 rounded-sm shadow-lg opacity-95 z-[-1]"></section>
+      <section class="absolute -right-6 -bottom-6 w-20 h-12 bg-pink-400 rounded-sm shadow-lg opacity-95 z-[-1]">
+      </section>
+
+      <section class="flex flex-col justify-center px-10 md:px-20 py-10 text-white space-y-6">
+        <h2 class="text-4xl font-extrabold">Contáctanos.</h2>
+        <p class="text-white/70 max-w-md">
+          ¿Tienes una duda o necesitas agendar una reparación? Escríbenos o agenda una cita — respuesta en menos de 24
+          horas.
+        </p>
+
+        <section class="space-y-4">
+          <section class="flex items-center gap-4">
+            <i class="fa-solid fa-location-dot text-pink-400 text-2xl"></i>
+            <span>Calle 100 #15-30, Bogotá, Colombia</span>
+          </section>
+          <section class="flex items-center gap-4">
+            <i class="fa-solid fa-phone text-pink-400 text-2xl"></i>
+            <span>+57 601 456 7890</span>
+          </section>
+          <section class="flex items-center gap-4">
+            <i class="fa-solid fa-envelope text-pink-400 text-2xl"></i>
+            <span>soporte@cellpoint.com</span>
+          </section>
+        </section>
+
+        <section class="flex items-center gap-4 mt-6 text-white/70 text-3xl">
+          <i class="fab fa-instagram text-xl"></i>
+          <i class="fab fa-facebook text-xl"></i>
+          <i class="fab fa-x-twitter text-xl"></i>
+          <i class="fab fa-tiktok text-xl"></i>
+        </section>
+      </section>
+
+      <section class="flex items-center justify-center p-6 bg-[#111827]/90 px-8 md:px-20 rounded-xl">
+        <form class="w-full space-y-4">
+          <input type="text" placeholder="Nombre"
+            class="w-full bg-indigo-900/60 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:ring-2 focus:ring-pink-400 outline-none" />
+          <input type="email" placeholder="Correo electrónico"
+            class="w-full bg-indigo-900/60 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:ring-2 focus:ring-pink-400 outline-none" />
+          <select
+            class="w-full bg-indigo-900/60 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:ring-2 focus:ring-pink-400 outline-none">
+            <option value="">Selecciona un servicio</option>
+            <option>Reparación de pantallas</option>
+            <option>Cambio de batería</option>
+            <option>Actualización de software</option>
+            <option>Accesorios y personalización</option>
+            <option>Quejas y reclamos</option>
+          </select>
+          <textarea rows="4" placeholder="Mensaje (opcional)"
+            class="w-full bg-indigo-900/60 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:ring-2 focus:ring-pink-400 outline-none"></textarea>
+
+          <section class="flex gap-3">
+            <button type="submit"
+              class="bg-pink-400 text-black font-semibold px-6 py-3 rounded-lg hover:brightness-95 transition">ENVIAR</button>
+            <a href="#"
+              class="border border-pink-400 text-white px-6 py-3 rounded-lg hover:bg-pink-400 hover:text-black transition flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+          </section>
+        </form>
+      </section>
+    </section>
+  </section>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+</html>
