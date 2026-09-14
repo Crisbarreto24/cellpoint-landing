@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>CellPoint</title>
+    <link rel="icon" href="logo2.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+    class="min-h-[200vh] bg-[linear-gradient(180deg,#5C4EF8_46%,#1A1E26_155%)] bg-fixed bg-cover text-white font-sans">
+
+
+ <header class="flex items-center justify-between px-20 py-0 top-0 relative">
+
+    <section class="flex items-center gap-3 md:gap-4">
+      <img src="logo2.png" alt="CellPoint" class="w-12 h-12 md:w-20 md:h-20 object-contain">
+      <h1 class="text-2xl font-semibold leading-none">CellPoint</h1>
+    </section>
+
+    <nav class="hidden md:flex space-x-8 text-sm font-medium text-xl">
+      <a href="index.html" class="hover:text-pink-400 transition">Inicio</a>
+      <a href="sobrenosotros.html" class="hover:text-pink-400 transition">Sobre Nosotros</a>
+      <a href="tienda.html" class="hover:text-pink-400 transition">Tienda</a>
+      <a href="servicios.html" class="hover:text-pink-400 transition">Servicios</a>
+      <a href="contactanos.html" class="hover:text-pink-400 transition">Contactanos</a>
+    </nav>
+
+    <section class="flex items-center space-x-4">
+      <button class="p-2 rounded-full hover:bg-indigo-400/40 transition">
+        <i class="fa-solid text-2xl fa-bag-shopping"></i>
+      </button>
+      <button class="p-2 rounded-full hover:bg-indigo-400/40 transition">
+        <i class="fa-solid fa-bell text-white text-2xl"></i>
+      </button>
+
+      <button id="menu-btn" class="block md:hidden p-2 rounded hover:bg-indigo-400/40 transition">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </section>
+
+    <nav id="mobile-menu"
+      class="hidden absolute top-full left-0 w-full bg-[#111827]/95 flex flex-col items-center space-y-4 py-6 text-lg font-medium md:hidden z-50">
+      <a href="index.html" class="hover:text-pink-400 transition">Inicio</a>
+      <a href="sobrenosotros.html" class="hover:text-pink-400 transition">Sobre Nosotros</a>
+      <a href="tienda.html" class="hover:text-pink-400 transition">Tienda</a>
+      <a href="servicios.html" class="hover:text-pink-400 transition">Servicios</a>
+      <a href="contactanos.html" class="hover:text-pink-400 transition">Contactanos</a>
+    </nav>
+  </header>
+
+
+    <section class="flex flex-col md:flex-row items-center justify-between px-20 py-5 relative">
+
+        <section class="max-w-lg space-y-10 text-center md:text-left z-10">
+            <h2 class="text-5xl font-extrabold leading-tight">
+                En <span class="text-pink-400">CellPoint</span>
+                Tenemos los dispositivos que más te gustan
+            </h2>
+            <p class="text-white font-semibold text-2xl">
+                Compra con el 10% de descuento por este mes
+            </p>
+            <button
+                class="bg-pink-400 text-2xl hover:bg-pink-600 text-white font-semibold px-10 py-3 rounded-xl shadow-lg transition w-full">
+                Escoge el Tuyo!
+            </button>
+        </section>
+
+
+        <section class="flex justify-center md:justify-end px-20 w-full md:w-auto items-center ">
+            <img src="iphonehero.png" alt="Celular"
+                class="max-w-sm md:max-w-md lg:max-w-lg drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]" />
+        </section>
+
+
+
+        <section class="flex flex-col items-center space-y-10 text-white text-3xl">
+
+            <section
+                class="bg-indigo-400/40 w-full px-4 py-2 flex items-center justify-center rounded-xl shadow-lg font-semibold text-center">
+                Garantía Directa con el Fabricante
+            </section>
+            <section class="flex flex-col items-center space-y-2">
+                <section class="bg-indigo-400/40 w-40 py-3 rounded-xl shadow-lg text-center text-5xl font-semibold">
+                    +90
+                </section>
+                <p class="text-sm">Referencias Disponibles</p>
+            </section>
+            <section class="text-center mt-5">
+
+                <p class="text-3xl font-bold">Todos los medios de pago disponibles</p>
+            </section>
+            <section class="w-full flex justify-center my-10">
+                <div
+                    class="bg-indigo-400/40 py-6 px-10 flex flex-col md:flex-row items-center justify-center gap-10 text-white text-lg font-semibold shadow-lg rounded-xl max-w-5xl w-full">
+
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-shield-halved text-pink-400 text-3xl"></i>
+                        <p>Compra 100% segura</p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-truck-fast text-pink-400 text-3xl"></i>
+                        <p>Envíos a todo el país</p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-tags text-pink-400 text-3xl"></i>
+                        <p>Descuentos exclusivos</p>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+    </section>
+
+
+    <section id="productos" class="px-10 py-16 text-center">
+        <h3 class="text-3xl font-bold mb-10">Productos Destacados</h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+
+            <article
+                class="relative bg-indigo-400/40 p-5 rounded-2xl shadow-lg overflow-hidden group hover:scale-105 transition">
+                <img src="celulariphone.png" alt="iPhone 13 Pro Max" class="w-full rounded-lg mb-4 ">
+                <h4 class="font-semibold">iPhone 13 Pro Max</h4>
+                <p class="text-pink-400 font-bold">$2.600.000</p>
+                <section
+                    class="absolute inset-0 bg-white/95 text-gray-800 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center rounded-2xl transition-opacity duration-300">
+                    <h4 class="font-bold text-lg mb-2">iPhone 13 Pro Max</h4>
+                    <p class="text-sm mb-3 px-3">Pantalla Super Retina XDR de 6.7", cámara triple de 12 MP, chip A15
+                        Bionic.</p>
+                    <button  class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+                       <a href="informacion.html">Ver Detalles</a> 
+                    </button>
+                </section>
+            </article>
+
+
+            <article
+                class="relative bg-indigo-400/40 p-5 rounded-2xl shadow-lg overflow-hidden group hover:scale-105 transition">
+                <img src="celularsamsung.png" alt="Samsung Galaxy S23 Ultra" class="w-full rounded-lg mb-4 ">
+                <h4 class="font-semibold">Samsung Galaxy S23 Ultra</h4>
+                <p class="text-pink-400 font-bold">$2.799.900</p>
+                <section
+                    class="absolute inset-0 bg-white/95 text-gray-800 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center rounded-2xl transition-opacity duration-300">
+                    <h4 class="font-bold text-lg mb-2">Samsung Galaxy S23 Ultra</h4>
+                    <p class="text-sm mb-3 px-3">Pantalla: 6,8″ Dynamic AMOLED 2X con resolución Quad HD+ y tasa de
+                        refresco adaptativa de 1-120 Hz</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+                        Ver Detalles
+                    </button>
+                </section>
+            </article>
+
+
+            <article
+                class="relative bg-indigo-400/40 p-5 rounded-2xl shadow-lg overflow-hidden group hover:scale-105 transition">
+                <img src="celularxiomi.png" alt="Xiaomi Redmi Note 13 Pro" class="w-full rounded-lg mb-4 ">
+                <h4 class="font-semibold">Xiaomi Redmi Note 13 Pro</h4>
+                <p class="text-pink-400 font-bold">$2.599.900</p>
+                <section
+                    class="absolute inset-0 bg-white/95 text-gray-800 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center rounded-2xl transition-opacity duration-300">
+                    <h4 class="font-bold text-lg mb-2">Xiaomi Redmi Note 13 Pro</h4>
+                    <p class="text-sm mb-3 px-3">Pantalla AMOLED de 6,67″ / 1,5 K con tasa de refresco de 120 Hz +
+                        Cámara principal de 200 MP con OIS + Carga rápida de 67 W.</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+                        Ver Detalles
+                    </button>
+                </section>
+            </article>
+
+            <article
+                class="relative bg-indigo-400/40 p-5 rounded-2xl shadow-lg overflow-hidden group hover:scale-105 transition">
+                <img src="celularmoto.png" alt="Motorola Edge 40" class="w-full rounded-lg mb-4 ">
+                <h4 class="font-semibold">Motorola Edge 40</h4>
+                <p class="text-pink-400 font-bold">$1.900.000</p>
+                <section
+                    class="absolute inset-0 bg-white/95 text-gray-800 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center rounded-2xl transition-opacity duration-300">
+                    <h4 class="font-bold text-lg mb-2">Motorola Edge 40</h4>
+                    <p class="text-sm mb-3 px-3">Pantalla p-OLED de 6.55″ (FHD+ 144 Hz) + cámara principal de 50 MP con
+                        OIS + carga rápida de 68 W.</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+                        Ver Detalles
+                    </button>
+                </section>
+            </article>
+
+            <article
+                class="relative bg-indigo-400/40 p-5 rounded-2xl shadow-lg overflow-hidden group hover:scale-105 transition">
+                <img src="celularrealme.png" alt="Realme GT Neo 5" class="w-full rounded-lg mb-4">
+                <h4 class="font-semibold">Realme GT Neo 5</h4>
+                <p class="text-pink-400 font-bold">$3.299.900</p>
+                <section
+                    class="absolute inset-0 bg-white/95 text-gray-800 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center rounded-2xl transition-opacity duration-300">
+                    <h4 class="font-bold text-lg mb-2">Realme GT Neo 5</h4>
+                    <p class="text-sm mb-3 px-3">Pantalla AMOLED de 6,74″ 144 Hz + cámara principal de 50 MP + carga
+                        rápida de 150 W/240 W.</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+                        Ver Detalles
+                    </button>
+                </section>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="px-10 py-16 text-center">
+        <h3 class="text-3xl font-bold mb-10">Algunas Opiniones de Nuestros Clientes</h3>
+
+        <section class="relative w-full max-w-xl mx-auto overflow-hidden rounded-2xl">
+            <section class="slides flex transition-transform duration-500">
+
+      
+                <article class="min-w-full bg-[#5C4FF9] p-6 rounded-2xl shadow-lg flex items-center gap-4">
+                    <div class="w-20 h-20 overflow-hidden ">
+                        <img src="opinion1.png" alt="Carlos Méndez" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-white">
+                        <h4 class="font-semibold text-lg">Carlos Méndez</h4>
+                        <p class="text-sm text-gray-100 mt-1">
+                            El servicio fue excelente, rápido y con mucha calidad. Definitivamente lo recomiendo.
+                        </p>
+                        <div class="text-white text-lg mt-2">★★★★★</div>
+                    </div>
+                </article>
+
+                <article class="min-w-full bg-[#5C4FF9] p-6 rounded-2xl shadow-lg flex items-center gap-4">
+                    <div class="w-20 h-20 overflow-hidden ">
+                        <img src="opinion2.png" alt="Laura Rodríguez" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-white">
+                        <h4 class="font-semibold text-lg">Laura Rodríguez</h4>
+                        <p class="text-sm text-gray-100 mt-1">
+                            Muy buena atención, el equipo siempre está dispuesto a ayudar. Me sentí muy bien atendida.
+                        </p>
+                        <div class="text-white text-lg mt-2">★★★★★</div>
+                    </div>
+                </article>
+
+        
+                <article class="min-w-full bg-[#5C4FF9] p-6 rounded-2xl shadow-lg flex items-center gap-4">
+                    <div class="w-20 h-20 overflow-hidden ">
+                        <img src="opinion3.png" alt="Andrés Gómez" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-white">
+                        <h4 class="font-semibold text-lg">Andrés Gómez</h4>
+                        <p class="text-sm text-gray-100 mt-1">
+                            Me sorprendió la rapidez y el compromiso. Todo salió mejor de lo esperado.
+                        </p>
+                        <div class="text-white text-lg mt-2">★★★★★</div>
+                    </div>
+                </article>
+
+            </section>
+        </section>
+    </section>
+    <section class="px-20">
+        <hr class="block md:hidden w-full border-t border-white/40 my-4 ">
+    </section>
+
+    <section class="text-center py-20 px-10 bg-indigo-400/20 rounded-3xl mx-10 my-16 shadow-lg">
+        <h3 class="text-4xl font-extrabold mb-4">
+            ¿Quieres ser el primero en recibir nuestras <span class="text-pink-400">ofertas</span>?
+        </h3>
+        <p class="text-lg text-white/80 mb-10">
+            Suscríbete y entérate antes que nadie de nuestros descuentos, lanzamientos y novedades.
+        </p>
+
+        <form class="flex flex-col md:flex-row justify-center items-center gap-4 max-w-2xl mx-auto">
+            <input type="email" placeholder="Correo electrónico"
+                class="w-full md:w-2/3 px-5 py-3 rounded-xl text-gray-900 text-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
+                required>
+            <button type="submit"
+                class="bg-pink-500 hover:bg-pink-600 text-white text-lg font-semibold px-8 py-3 rounded-xl shadow-lg transition">
+                Suscribirme
+            </button>
+        </form>
+    </section>
+
+    <footer class="text-white py-3 px-20 flex flex-col md:flex-row items-center justify-between gap-10">
+
+
+        <section class="flex flex-col items-center md:items-start text-center md:text-left">
+            <img src="logof1.png" alt="CellPoint Logo" class="w-20 h-20 mb-2">
+        </section>
+
+        <section class="flex flex-row gap-5">
+            <a href="#"
+                class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+                <i class="fab fa-instagram text-white text-2xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+                <i class="fab fa-facebook text-white text-2xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+                <i class="fab fa-x-twitter text-white text-2xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+                <i class="fab fa-tiktok text-white text-2xl"></i>
+            </a>
+        </section>
+
+        <section class="hidden md:block w-px h-20 bg-white/40"></section>
+
+
+        <section class="text-center md:text-left leading-relaxed">
+            <p><span class="font-semibold">Teléfono:</span> +57 601 456 7890</p>
+            <p><span class="font-semibold">WhatsApp:</span> +57 320 987 6543</p>
+            <p><span class="font-semibold">Correo:</span> soporte@cellpoint.com</p>
+            <p><span class="font-semibold">Dirección:</span> Calle 100 #15-30, Bogotá, Colombia</p>
+        </section>
+
+        <section class=" text-center text-white/70 text-xs py-3">
+            © 2025 CellPoint — Todos los derechos reservados.
+        </section>
+    </footer>
+
+ <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+</html>

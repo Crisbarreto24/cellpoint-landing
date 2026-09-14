@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>CellPoint</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+  class="min-h-[100vh] bg-[linear-gradient(180deg,#5C4EF8_46%,#1A1E26_155%)] bg-fixed bg-cover text-white font-sans ">
+
+
+  <header class="flex items-center justify-between px-20 py-0 top-0 relative">
+
+    <section class="flex items-center gap-3 md:gap-4">
+      <img src="logo2.png" alt="CellPoint" class="w-12 h-12 md:w-20 md:h-20 object-contain">
+      <h1 class="text-2xl font-semibold leading-none">CellPoint</h1>
+    </section>
+
+    <nav class="hidden md:flex space-x-8 text-sm font-medium text-xl">
+      <a href="index.html" class="hover:text-pink-400 transition">Inicio</a>
+      <a href="sobrenosotros.html" class="hover:text-pink-400 transition">Sobre Nosotros</a>
+      <a href="tienda.html" class="hover:text-pink-400 transition">Tienda</a>
+      <a href="servicios.html" class="hover:text-pink-400 transition">Servicios</a>
+      <a href="contactanos.html" class="hover:text-pink-400 transition">Contactanos</a>
+    </nav>
+
+    <section class="flex items-center space-x-4">
+      <button class="p-2 rounded-full hover:bg-indigo-400/40 transition">
+        <i class="fa-solid text-2xl fa-bag-shopping"></i>
+      </button>
+      <button class="p-2 rounded-full hover:bg-indigo-400/40 transition">
+        <i class="fa-solid fa-bell text-white text-2xl"></i>
+      </button>
+
+      <button id="menu-btn" class="block md:hidden p-2 rounded hover:bg-indigo-400/40 transition">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </section>
+
+    <nav id="mobile-menu"
+      class="hidden absolute top-full left-0 w-full bg-[#111827]/95 flex flex-col items-center space-y-4 py-6 text-lg font-medium md:hidden z-50">
+      <a href="index.html" class="hover:text-pink-400 transition">Inicio</a>
+      <a href="sobrenosotros.html" class="hover:text-pink-400 transition">Sobre Nosotros</a>
+      <a href="tienda.html" class="hover:text-pink-400 transition">Tienda</a>
+      <a href="servicios.html" class="hover:text-pink-400 transition">Servicios</a>
+      <a href="contactanos.html" class="hover:text-pink-400 transition">Contactanos</a>
+    </nav>
+  </header>
+
+
+
+  <section class="px-6 py-6 md:px-10  bg-transparent text-white">
+
+
+    <section class="flex flex-col md:flex-row gap-10">
+
+      <aside class="md:w-1/4 bg-white/10 backdrop-blur-md rounded-2xl p-6 space-y-6 h-max shadow-lg shadow-black/20">
+        <h3 class="text-2xl font-semibold mb-4">Filtros</h3>
+
+        <section>
+          <p class="font-medium mb-2 text-white/90">Condición</p>
+          <section class="space-y-2">
+            <label class="flex items-center space-x-2 text-white/80 hover:text-white transition">
+              <input type="checkbox" class="accent-pink-500">
+              <span>Nuevo</span>
+            </label>
+            <label class="flex items-center space-x-2 text-white/80 hover:text-white transition">
+              <input type="checkbox" class="accent-pink-500">
+              <span>Usado</span>
+            </label>
+          </section>
+        </section>
+
+        <section>
+          <p class="font-medium mb-2 text-white/90">Rango de Precio</p>
+          <input type="range" min="0" max="1000000" value="500000" class="w-full accent-pink-500 cursor-pointer">
+          <p class="text-sm text-white/60">Hasta $1.000.000</p>
+        </section>
+
+        <section>
+          <p class="font-medium mb-2 text-white/90">Tipo de producto</p>
+          <section class="space-y-2">
+            <label class="flex items-center space-x-2 text-white/80 hover:text-white transition">
+              <input type="checkbox" class="accent-pink-500">
+              <span>Accesorios</span>
+            </label>
+            <label class="flex items-center space-x-2 text-white/80 hover:text-white transition">
+              <input type="checkbox" class="accent-pink-500">
+              <span>Repuestos</span>
+            </label>
+            <label class="flex items-center space-x-2 text-white/80 hover:text-white transition">
+              <input type="checkbox" class="accent-pink-500">
+              <span>Celulares</span>
+            </label>
+          </section>
+        </section>
+
+
+        <section class=" text-center">
+          <h4 class="text-xl font-semibold mb-4 text-white/90">Marcas Aliadas</h4>
+          <div class="grid grid-cols-3 gap-4 place-items-center">
+            <img src="samsung.png" alt="Samsung"
+              class="w-20 h-20 object-contain opacity-80 hover:opacity-100 transition duration-300">
+            <img src="apple.png" alt="Apple"
+              class="w-10 h-10 object-contain opacity-80 hover:opacity-100 transition duration-300">
+            <img src="xiaomi.png" alt="Xiaomi"
+              class="w-16 h-16 object-contain opacity-80 hover:opacity-100 transition duration-300">
+            <img src="Huawei.png" alt="Huawei"
+              class="w-16 h-16 object-contain opacity-80 hover:opacity-100 transition duration-300">
+            <img src="motorola.png" alt="Motorola"
+              class="w-20 h-20 object-contain opacity-80 hover:opacity-100 transition duration-300">
+            <img src="oppo.png" alt="Oppo"
+              class="w-16 h-16 object-contain opacity-80 hover:opacity-100 transition duration-300">
+          </div>
+        </section>
+      </aside>
+
+
+
+      <section class="md:w-3/4">
+
+        <section class="flex flex-col sm:flex-row items-center justify-start mb-6 gap-0 w-full">
+          <section class="flex items-center w-full bg-white/10 rounded-lg px-3 py-2 border">
+            <i class="fa-solid fa-magnifying-glass text-white/70 mr-3"></i>
+            <input type="text" placeholder="Buscar producto..."
+              class="bg-transparent outline-none w-full text-white placeholder-white/60">
+          </section>
+
+          <section class="flex items-center gap-3 sm:ml-3 mt-3 sm:mt-0">
+            <label class="text-sm text-white/80">Ordenar por:</label>
+            <select class="bg-indigo-900/60 text-white px-3 py-2 rounded-lg outline-none ">
+              <option>Relevancia</option>
+              <option>Precio: menor a mayor</option>
+              <option>Precio: mayor a menor</option>
+              <option>Más vendidos</option>
+            </select>
+          </section>
+        </section>
+
+        <section class="max-h-[70vh] overflow-y-auto pr-2 productos-scroll">
+          <section class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <article
+              class="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-md hover:shadow-pink-400/40 ">
+              <section class="relative flex items-center justify-center h-56">
+                <img src="vidrio.png" alt="Vidrio templado" class="max-h-full w-auto  transition-transform p-3">
+                <span class="absolute top-3 left-3 bg-pink-500 text-xs font-bold px-3 py-1 rounded-full">Nuevo</span>
+              </section>
+              <section class="p-5">
+                <h3 class="text-lg font-semibold mb-1">Vidrio Templado Premium</h3>
+                <p class="text-white/70 text-sm mb-3">Protege tu pantalla. </p>
+                <section class="flex items-center justify-between mb-3">
+                  <section>
+                    <section class="flex items-baseline gap-2">
+                      <span class="text-pink-400 font-bold text-lg">$25.000</span>
+                      <span class="text-white/60 text-sm line-through">$35.000</span>
+                    </section>
+                  </section>
+                  <section class="text-yellow-400 text-sm flex items-center gap-1">★ 4.8</section>
+                </section>
+                <section class="flex items-center gap-3">
+                  <button
+                    class="flex-1 bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 rounded-lg transition">Ver
+                    detalles</button>
+                  <button
+                    class="w-10 h-10 bg-white/6 rounded-lg flex items-center justify-center hover:bg-white/10 transition">
+                    <i class="fa-regular fa-heart text-white"></i>
+                  </button>
+                </section>
+              </section>
+            </article>
+
+
+            <article
+              class="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-md hover:shadow-pink-400/40  ">
+              <section class="relative flex items-center justify-center h-56">
+                <img src="cargador.png" alt="Vidrio templado" class="max-h-full w-auto  transition-transform p-3">
+                <span
+                  class="absolute top-3 left-3 bg-yellow-400/80 text-xs font-bold px-3 py-1 rounded-full">Promocion</span>
+              </section>
+              <section class="p-5">
+                <h3 class="text-lg font-semibold mb-1">Cargador Rápido 65W</h3>
+                <p class="text-white/70 text-sm mb-3">Carga tu dispositivo en minutos.</p>
+                <section class="flex items-center justify-between mb-3">
+                  <span class="text-pink-400 font-bold text-lg">$45.000</span>
+                  <section class="text-yellow-400 text-sm flex items-center gap-1">★ 4.9</section>
+                </section>
+                <section class="flex items-center gap-3">
+                  <button
+                    class="flex-1 bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 rounded-lg transition">Ver
+                    detalles</button>
+                  <button
+                    class="w-10 h-10 bg-white/6 rounded-lg flex items-center justify-center hover:bg-white/10 transition">
+                    <i class="fa-regular fa-heart text-white"></i>
+                  </button>
+                </section>
+              </section>
+            </article>
+
+            <article
+              class="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-md hover:shadow-pink-400/40 ">
+              <section class="relative flex items-center justify-center h-56">
+                <img src="audifonos.png" alt="Vidrio templado" class="max-h-full w-auto  transition-transform p-3">
+                <span class="absolute top-3 left-3 bg-pink-500 text-xs font-bold px-3 py-1 rounded-full">Nuevo</span>
+              </section>
+              <section class="p-5">
+                <h3 class="text-lg font-semibold mb-1">Audífonos Bluetooth</h3>
+                <p class="text-white/70 text-sm mb-3">Sonido envolvente y batería duradera.</p>
+                <section class="flex items-center justify-between mb-3">
+                  <section class="flex items-baseline gap-2">
+                    <span class="text-pink-400 font-bold text-lg">$90.000</span>
+                    <span class="text-white/60 text-sm line-through">$120.000</span>
+                  </section>
+                  <section class="text-yellow-400 text-sm flex items-center gap-1">★ 4.7</section>
+                </section>
+                <section class="flex items-center gap-3">
+                  <button
+                    class="flex-1 bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 rounded-lg transition">Ver
+                    detalles</button>
+                  <button
+                    class="w-10 h-10 bg-white/6 rounded-lg flex items-center justify-center hover:bg-white/10 transition">
+                    <i class="fa-regular fa-heart text-white"></i>
+                  </button>
+                </section>
+              </section>
+            </article>
+
+
+            <article
+              class="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-md hover:shadow-pink-400/40 hover:-translate-y-2 transition-all duration-500">
+              <section class="relative flex items-center justify-center h-56">
+                <img src="powerbank.png" alt="Vidrio templado" class="max-h-full w-auto  transition-transform p-3">
+                <span class="absolute top-3 left-3 bg-pink-500 text-xs font-bold px-3 py-1 rounded-full">Nuevo</span>
+              </section>
+              <section class="p-5">
+                <h3 class="text-lg font-semibold mb-1">Powerbank 20000mAh</h3>
+                <p class="text-white/70 text-sm mb-3">Carga hasta 3 dispositivos a la vez.</p>
+                <section class="flex items-center justify-between mb-3">
+                  <span class="text-pink-400 font-bold text-lg">$120.000</span>
+                  <section class="text-yellow-400 text-sm flex items-center gap-1">★ 4.9</section>
+                </section>
+                <section class="flex items-center gap-3">
+                  <button
+                    class="flex-1 bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 rounded-lg transition">Añadir</button>
+                  <button
+                    class="w-10 h-10 bg-white/6 rounded-lg flex items-center justify-center hover:bg-white/10 transition">
+                    <i class="fa-regular fa-heart text-white"></i>
+                  </button>
+                </section>
+              </section>
+            </article>
+
+
+            <article
+              class="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-md hover:shadow-pink-400/40 hover:-translate-y-2 transition-all duration-500">
+              <section class="relative flex items-center justify-center h-56">
+                <img src="cable.png" alt="Vidrio templado" class="max-h-full w-auto  transition-transform p-3">
+                <span class="absolute top-3 left-3 bg-pink-500 text-xs font-bold px-3 py-1 rounded-full">Nuevo</span>
+              </section>
+              <section class="p-5">
+                <h3 class="text-lg font-semibold mb-1">Cable Tipo C Reforzado</h3>
+                <p class="text-white/70 text-sm mb-3">Alta durabilidad y carga rápida.</p>
+                <section class="flex items-center justify-between mb-3">
+                  <span class="text-pink-400 font-bold text-lg">$18.000</span>
+                  <section class="text-yellow-400 text-sm flex items-center gap-1">★ 4.6</section>
+                </section>
+                <section class="flex items-center gap-3">
+                  <button
+                    class="flex-1 bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 rounded-lg transition">Añadir</button>
+                  <button
+                    class="w-10 h-10 bg-white/6 rounded-lg flex items-center justify-center hover:bg-white/10 transition">
+                    <i class="fa-regular fa-heart text-white"></i>
+                  </button>
+                </section>
+              </section>
+            </article>
+
+
+            <article
+              class="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-md hover:shadow-pink-400/40 hover:-translate-y-2 transition-all duration-500">
+              <section class="relative flex items-center justify-center h-56">
+                <img src="carro.png" alt="Vidrio templado" class="max-h-full w-auto  transition-transform p-3">
+                <span class="absolute top-3 left-3 bg-pink-500 text-xs font-bold px-3 py-1 rounded-full">Nuevo</span>
+              </section>
+              <section class="p-5">
+                <h3 class="text-lg font-semibold mb-1">Soporte Magnético para Auto</h3>
+                <p class="text-white/70 text-sm mb-3">Instalación rápida y segura.</p>
+                <section class="flex items-center justify-between mb-3">
+                  <span class="text-pink-400 font-bold text-lg">$35.000</span>
+                  <section class="text-yellow-400 text-sm flex items-center gap-1">★ 4.5</section>
+                </section>
+                <section class="flex items-center gap-3">
+                  <button
+                    class="flex-1 bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 rounded-lg transition">Añadir</button>
+                  <button
+                    class="w-10 h-10 bg-white/6 rounded-lg flex items-center justify-center hover:bg-white/10 transition">
+                    <i class="fa-regular fa-heart text-white"></i>
+                  </button>
+                </section>
+              </section>
+            </article>
+
+
+            <article
+              class="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-md hover:shadow-pink-400/40 hover:-translate-y-2 transition-all duration-500">
+              <section class="relative flex items-center justify-center h-56">
+                <img src="funda.png" alt="Vidrio templado" class="max-h-full w-auto  transition-transform p-3">
+                <span class="absolute top-3 left-3 bg-pink-500 text-xs font-bold px-3 py-1 rounded-full">Nuevo</span>
+              </section>
+              <section class="p-5">
+                <h3 class="text-lg font-semibold mb-1">Funda Protectora Antigolpes</h3>
+                <p class="text-white/70 text-sm mb-3">Diseño transparente y resistente.</p>
+                <section class="flex items-center justify-between mb-3">
+                  <span class="text-pink-400 font-bold text-lg">$29.000</span>
+                  <section class="text-yellow-400 text-sm flex items-center gap-1">★ 4.8</section>
+                </section>
+                <section class="flex items-center gap-3">
+                  <button
+                    class="flex-1 bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 rounded-lg transition">Añadir</button>
+                  <button
+                    class="w-10 h-10 bg-white/6 rounded-lg flex items-center justify-center hover:bg-white/10 transition">
+                    <i class="fa-regular fa-heart text-white"></i>
+                  </button>
+                </section>
+              </section>
+            </article>
+
+
+            <article
+              class="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-md hover:shadow-pink-400/40 hover:-translate-y-2 transition-all duration-500">
+              <section class="relative flex items-center justify-center h-56">
+                <img src="watch.png" alt="Vidrio templado" class="max-h-full w-auto  transition-transform p-3">
+                <span class="absolute top-3 left-3 bg-pink-500 text-xs font-bold px-3 py-1 rounded-full">Nuevo</span>
+              </section>
+              <section class="p-5">
+                <h3 class="text-lg font-semibold mb-1">Smartwatch FitBand</h3>
+                <p class="text-white/70 text-sm mb-3">Monitoreo de salud y notificaciones.</p>
+                <section class="flex items-center justify-between mb-3">
+                  <span class="text-pink-400 font-bold text-lg">$150.000</span>
+                  <section class="text-yellow-400 text-sm flex items-center gap-1">★ 4.9</section>
+                </section>
+                <section class="flex items-center gap-3">
+                  <button
+                    class="flex-1 bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 rounded-lg transition">Añadir</button>
+                  <button
+                    class="w-10 h-10 bg-white/6 rounded-lg flex items-center justify-center hover:bg-white/10 transition">
+                    <i class="fa-regular fa-heart text-white"></i>
+                  </button>
+                </section>
+              </section>
+            </article>
+
+
+            <article
+              class="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-md hover:shadow-pink-400/40 hover:-translate-y-2 transition-all duration-500">
+              <section class="relative flex items-center justify-center h-56">
+                <img src="gaming.png" alt="Vidrio templado" class="max-h-full w-auto  transition-transform p-3">
+                <span class="absolute top-3 left-3 bg-pink-500 text-xs font-bold px-3 py-1 rounded-full">Nuevo</span>
+              </section>
+              <section class="p-5">
+                <h3 class="text-lg font-semibold mb-1">Auriculares Gamer Pro</h3>
+                <p class="text-white/70 text-sm mb-3">Micrófono incorporado y sonido HD.</p>
+                <section class="flex items-center justify-between mb-3">
+                  <span class="text-pink-400 font-bold text-lg">$110.000</span>
+                  <section class="text-yellow-400 text-sm flex items-center gap-1">★ 4.7</section>
+                </section>
+                <section class="flex items-center gap-3">
+                  <button
+                    class="flex-1 bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 rounded-lg transition">Añadir</button>
+                  <button
+                    class="w-10 h-10 bg-white/6 rounded-lg flex items-center justify-center hover:bg-white/10 transition">
+                    <i class="fa-regular fa-heart text-white"></i>
+                  </button>
+                </section>
+              </section>
+            </article>
+
+
+
+            <article
+              class="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-md hover:shadow-pink-400/40 hover:-translate-y-2 transition-all duration-500">
+              <section class="relative flex items-center justify-center h-56">
+                <img src="celularxiomi.png" alt="Vidrio templado" class="max-h-full w-auto  transition-transform p-3">
+                <span class="absolute top-3 left-3 bg-pink-500 text-xs font-bold px-3 py-1 rounded-full">Nuevo</span>
+              </section>
+              <section class="p-5">
+                <h3 class="text-lg font-semibold mb-1">Auriculares Gamer Pro</h3>
+                <p class="text-white/70 text-sm mb-3">Micrófono incorporado y sonido HD.</p>
+                <section class="flex items-center justify-between mb-3">
+                  <span class="text-pink-400 font-bold text-lg">$110.000</span>
+                  <section class="text-yellow-400 text-sm flex items-center gap-1">★ 4.7</section>
+                </section>
+                <section class="flex items-center gap-3">
+                  <button
+                    class="flex-1 bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 rounded-lg transition">Añadir</button>
+                  <button
+                    class="w-10 h-10 bg-white/6 rounded-lg flex items-center justify-center hover:bg-white/10 transition">
+                    <i class="fa-regular fa-heart text-white"></i>
+                  </button>
+                </section>
+              </section>
+            </article>
+            <article
+              class="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-md hover:shadow-pink-400/40 hover:-translate-y-2 transition-all duration-500">
+              <section class="relative flex items-center justify-center h-56">
+                <img src="celularsamsung.png" alt="Vidrio templado" class="max-h-full w-auto  transition-transform p-3">
+                <span class="absolute top-3 left-3 bg-pink-500 text-xs font-bold px-3 py-1 rounded-full">Nuevo</span>
+              </section>
+              <section class="p-5">
+                <h3 class="text-lg font-semibold mb-1">Auriculares Gamer Pro</h3>
+                <p class="text-white/70 text-sm mb-3">Micrófono incorporado y sonido HD.</p>
+                <section class="flex items-center justify-between mb-3">
+                  <span class="text-pink-400 font-bold text-lg">$110.000</span>
+                  <section class="text-yellow-400 text-sm flex items-center gap-1">★ 4.7</section>
+                </section>
+                <section class="flex items-center gap-3">
+                  <button
+                    class="flex-1 bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 rounded-lg transition">Añadir</button>
+                  <button
+                    class="w-10 h-10 bg-white/6 rounded-lg flex items-center justify-center hover:bg-white/10 transition">
+                    <i class="fa-regular fa-heart text-white"></i>
+                  </button>
+                </section>
+              </section>
+            </article>
+            <article
+              class="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-md hover:shadow-pink-400/40 hover:-translate-y-2 transition-all duration-500">
+              <section class="relative flex items-center justify-center h-56">
+                <img src="celularmoto.png" alt="Vidrio templado" class="max-h-full w-auto  transition-transform p-3">
+                <span class="absolute top-3 left-3 bg-pink-500 text-xs font-bold px-3 py-1 rounded-full">Nuevo</span>
+              </section>
+              <section class="p-5">
+                <h3 class="text-lg font-semibold mb-1">Auriculares Gamer Pro</h3>
+                <p class="text-white/70 text-sm mb-3">Micrófono incorporado y sonido HD.</p>
+                <section class="flex items-center justify-between mb-3">
+                  <span class="text-pink-400 font-bold text-lg">$110.000</span>
+                  <section class="text-yellow-400 text-sm flex items-center gap-1">★ 4.7</section>
+                </section>
+                <section class="flex items-center gap-3">
+                  <button
+                    class="flex-1 bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 rounded-lg transition">Añadir</button>
+                  <button
+                    class="w-10 h-10 bg-white/6 rounded-lg flex items-center justify-center hover:bg-white/10 transition">
+                    <i class="fa-regular fa-heart text-white"></i>
+                  </button>
+                </section>
+              </section>
+            </article>
+            <article
+              class="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-md hover:shadow-pink-400/40 hover:-translate-y-2 transition-all duration-500">
+              <section class="relative flex items-center justify-center h-56">
+                <img src="celulariphone.png" alt="Vidrio templado" class="max-h-full w-auto  transition-transform p-3">
+                <span class="absolute top-3 left-3 bg-pink-500 text-xs font-bold px-3 py-1 rounded-full">Nuevo</span>
+              </section>
+              <section class="p-5">
+                <h3 class="text-lg font-semibold mb-1">Auriculares Gamer Pro</h3>
+                <p class="text-white/70 text-sm mb-3">Micrófono incorporado y sonido HD.</p>
+                <section class="flex items-center justify-between mb-3">
+                  <span class="text-pink-400 font-bold text-lg">$110.000</span>
+                  <section class="text-yellow-400 text-sm flex items-center gap-1">★ 4.7</section>
+                </section>
+                <section class="flex items-center gap-3">
+                  <button
+                    class="flex-1 bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 rounded-lg transition">Añadir</button>
+                  <button
+                    class="w-10 h-10 bg-white/6 rounded-lg flex items-center justify-center hover:bg-white/10 transition">
+                    <i class="fa-regular fa-heart text-white"></i>
+                  </button>
+                </section>
+              </section>
+            </article>
+
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+
+
+
+
+  <footer
+    class="bg-gradient-to-r ] text-white py-3 px-20 flex flex-col md:flex-row items-center justify-between gap-10">
+
+
+    <section class="flex flex-col items-center md:items-start text-center md:text-left">
+      <img src="logof1.png" alt="CellPoint Logo" class="w-20 h-20 mb-2">
+    </section>
+
+    <section class="flex flex-row gap-5">
+      <a href="#"
+        class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+        <i class="fab fa-instagram text-white text-2xl"></i>
+      </a>
+      <a href="#"
+        class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+        <i class="fab fa-facebook text-white text-2xl"></i>
+      </a>
+      <a href="#"
+        class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+        <i class="fab fa-x-twitter text-white text-2xl"></i>
+      </a>
+      <a href="#"
+        class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+        <i class="fab fa-tiktok text-white text-2xl"></i>
+      </a>
+    </section>
+
+    <section class="hidden md:block w-px h-20 bg-white/40"></section>
+
+
+    <section class="text-center md:text-left leading-relaxed">
+      <p><span class="font-semibold">Teléfono:</span> +57 601 456 7890</p>
+      <p><span class="font-semibold">WhatsApp:</span> +57 320 987 6543</p>
+      <p><span class="font-semibold">Correo:</span> soporte@cellpoint.com</p>
+      <p><span class="font-semibold">Dirección:</span> Calle 100 #15-30, Bogotá, Colombia</p>
+    </section>
+
+    <section class=" text-center text-white/70 text-xs py-3">
+      © 2025 CellPoint — Todos los derechos reservados.
+    </section>
+  </footer>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>CellPoint</title>
+    <link rel="icon" href="logo2.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+    class="min-h-[100vh] bg-[linear-gradient(180deg,#5C4EF8_46%,#1A1E26_155%)] bg-fixed bg-cover text-white font-sans">
+
+
+    <header class="flex items-center justify-between px-20 py-0 top-0 relative">
+
+        <section class="flex items-center gap-3 md:gap-4">
+            <img src="logo2.png" alt="CellPoint" class="w-12 h-12 md:w-20 md:h-20 object-contain">
+            <h1 class="text-2xl font-semibold leading-none">CellPoint</h1>
+        </section>
+
+        <nav class="hidden md:flex space-x-8 text-sm font-medium text-xl">
+            <a href="index.html" class="hover:text-pink-400 transition">Inicio</a>
+            <a href="sobrenosotros.html" class="hover:text-pink-400 transition">Sobre Nosotros</a>
+            <a href="tienda.html" class="hover:text-pink-400 transition">Tienda</a>
+            <a href="servicios.html" class="hover:text-pink-400 transition">Servicios</a>
+            <a href="contactanos.html" class="hover:text-pink-400 transition">Contactanos</a>
+        </nav>
+
+        <section class="flex items-center space-x-4">
+            <button class="p-2 rounded-full hover:bg-indigo-400/40 transition">
+                <i class="fa-solid text-2xl fa-bag-shopping"></i>
+            </button>
+            <button class="p-2 rounded-full hover:bg-indigo-400/40 transition">
+                <i class="fa-solid fa-bell text-white text-2xl"></i>
+            </button>
+
+            <button id="menu-btn" class="block md:hidden p-2 rounded hover:bg-indigo-400/40 transition">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </section>
+
+        <nav id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-[#111827]/95 flex flex-col items-center space-y-4 py-6 text-lg font-medium md:hidden z-50">
+            <a href="index.html" class="hover:text-pink-400 transition">Inicio</a>
+            <a href="sobrenosotros.html" class="hover:text-pink-400 transition">Sobre Nosotros</a>
+            <a href="tienda.html" class="hover:text-pink-400 transition">Tienda</a>
+            <a href="servicios.html" class="hover:text-pink-400 transition">Servicios</a>
+            <a href="contactanos.html" class="hover:text-pink-400 transition">Contactanos</a>
+        </nav>
+    </header>
+
+
+    <section class="w-full max-w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 py-40 px-10 lg:px-40">
+
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:col-span-2">
+
+
+            <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-md 
+                    flex flex-col justify-between shadow-lg">
+                <div>
+                    <p class="text-white/60 text-xs">Batería</p>
+                    <h3 class="text-white font-semibold text-xl mt-1">4.352 mAh</h3>
+                </div>
+
+                <i class="fa-solid fa-battery-full text-white/40 text-5xl mt-6 mx-auto"></i>
+            </div>
+
+
+            <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-md 
+                    flex flex-col justify-between shadow-lg">
+                <i class="fa-solid fa-camera text-white/40 text-5xl mx-auto mb-4"></i>
+                <div class="text-center sm:text-left">
+                    <p class="text-white/60 text-xs">Cámaras</p>
+                    <h3 class="text-white font-bold text-xl">Cámara triple de 12 MP</h3>
+                    <p class="text-white/60 text-sm">Ultra gran angular, Macro, Sensor principal</p>
+                </div>
+            </div>
+
+            <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-md 
+                    flex flex-col justify-between shadow-lg">
+                <div>
+                    <p class="text-white/60 text-xs">Procesador</p>
+                    <h3 class="text-white font-semibold text-lg mt-1">Chip A15 Bionic.</h3>
+                </div>
+                <i class="fa-solid fa-microchip text-white/40 text-5xl mt-6 mx-auto"></i>
+            </div>
+
+
+            <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-md 
+                    flex flex-col justify-between shadow-lg">
+                <div>
+                    <p class="text-white/60 text-xs">RAM</p>
+                    <h3 class="text-white font-semibold text-lg mt-1">6GB</h3>
+                </div>
+                <i class="fa-solid fa-memory text-white/40 text-5xl mt-6 mx-auto"></i>
+            </div>
+
+
+            <div class="sm:col-span-2 bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-md 
+                    flex items-center justify-between shadow-lg">
+                <div>
+                    <p class="text-white/60 text-xs tracking-wide">Pantalla</p>
+                    <h3 class="text-white font-bold text-xl leading-tight">
+                        Pantalla Super Retina XDR de 6.7
+                    </h3>
+                </div>
+                <i class="fa-solid fa-mobile-screen text-white/40 text-5xl"></i>
+            </div>
+
+        </div>
+
+
+
+        <aside class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-md 
+                 flex flex-col h-full shadow-xl">
+
+            <h2 class="text-2xl font-bold mb-4 text-white">Compra el dispositivo</h2>
+
+            <div class="flex items-center gap-4 mb-4">
+                <img src="celulariphone.png" class="w-40 h-40 object-contain rounded-2xl shadow-md">
+                <div>
+                    <h3 class="text-lg font-semibold text-white">Iphone 13 pro max</h3>
+
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <p class="text-3xl font-bold text-white">$2.600.000</p>
+                <p class="text-sm text-white/60">Envío gratis • Garantía incluida</p>
+            </div>
+
+            <button class="w-full py-3 rounded-2xl bg-pink-600 hover:bg-pink-500 
+                       font-semibold text-white transition shadow-md">
+                Comprar ahora
+            </button>
+
+            <button class="w-full py-3 mt-3 rounded-2xl bg-white/10 border border-white/20 
+                       font-semibold text-white hover:bg-white/20 transition">
+                Agregar al carrito
+            </button>
+
+        </aside>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <footer class="text-white py-3 px-20 flex flex-col md:flex-row items-center justify-between gap-10">
+
+
+        <section class="flex flex-col items-center md:items-start text-center md:text-left">
+            <img src="logof1.png" alt="CellPoint Logo" class="w-20 h-20 mb-2">
+        </section>
+
+        <section class="flex flex-row gap-5">
+            <a href="#"
+                class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+                <i class="fab fa-instagram text-white text-2xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+                <i class="fab fa-facebook text-white text-2xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+                <i class="fab fa-x-twitter text-white text-2xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+                <i class="fab fa-tiktok text-white text-2xl"></i>
+            </a>
+        </section>
+
+        <section class="hidden md:block w-px h-20 bg-white/40"></section>
+
+
+        <section class="text-center md:text-left leading-relaxed">
+            <p><span class="font-semibold">Teléfono:</span> +57 601 456 7890</p>
+            <p><span class="font-semibold">WhatsApp:</span> +57 320 987 6543</p>
+            <p><span class="font-semibold">Correo:</span> soporte@cellpoint.com</p>
+            <p><span class="font-semibold">Dirección:</span> Calle 100 #15-30, Bogotá, Colombia</p>
+        </section>
+
+        <section class=" text-center text-white/70 text-xs py-3">
+            © 2025 CellPoint — Todos los derechos reservados.
+        </section>
+    </footer>
+
+
+</body>
+
+</html>

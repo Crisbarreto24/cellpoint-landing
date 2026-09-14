@@ -1,0 +1,111 @@
+@keyframes slideAnimation {
+
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+
+
+    25%,
+    45% {
+        transform: translateX(-100%);
+    }
+
+
+    50%,
+    70% {
+        transform: translateX(-200%);
+    }
+
+
+    75%,
+    100% {
+        transform: translateX(0);
+    }
+
+
+}
+
+
+.slides {
+    animation: slideAnimation 12s infinite;
+
+    will-change: transform;
+}
+
+
+.relative:hover .slides {
+    animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .slides {
+        animation: none;
+    }
+}
+
+  @media (max-width: 768px) {
+
+      header section.flex.items-center.space-x-4 button:nth-child(1),
+      header section.flex.items-center.space-x-4 button:nth-child(2) {
+        display: none;
+      }
+    }
+
+@keyframes fundadores {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.anim-fundadores1 {
+  animation: fundadores 2s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
+}
+.anim-fundadores2 {
+  animation: fundadores 2s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
+}
+
+@keyframes flotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.flotar {
+  animation: flotar 5s ease-in-out infinite;
+}
+
+
+@keyframes flotar-punto {
+  0%, 100% { transform: translateY(0); opacity: 0.6; }
+  50% { transform: translateY(-10px); opacity: 1; }
+}
+
+
+@keyframes flotar-punto {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+.productos-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #ff4eb8 transparent;
+}
+
+

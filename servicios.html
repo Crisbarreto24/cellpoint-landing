@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>CellPoint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-[100vh] bg-gradient-to-b from-blue-600 to-purple-700 bg-fixed bg-cover text-white font-sans ">
+
+
+ <header class="flex items-center justify-between px-20 py-0 top-0 relative">
+
+    <section class="flex items-center gap-3 md:gap-4">
+      <img src="logo2.png" alt="CellPoint" class="w-12 h-12 md:w-20 md:h-20 object-contain">
+      <h1 class="text-2xl font-semibold leading-none">CellPoint</h1>
+    </section>
+
+    <nav class="hidden md:flex space-x-8 text-sm font-medium text-xl">
+      <a href="index.html" class="hover:text-pink-400 transition">Inicio</a>
+      <a href="sobrenosotros.html" class="hover:text-pink-400 transition">Sobre Nosotros</a>
+      <a href="tienda.html" class="hover:text-pink-400 transition">Tienda</a>
+      <a href="servicios.html" class="hover:text-pink-400 transition">Servicios</a>
+      <a href="contactanos.html" class="hover:text-pink-400 transition">Contactanos</a>
+    </nav>
+
+    <section class="flex items-center space-x-4">
+      <button class="p-2 rounded-full hover:bg-indigo-400/40 transition">
+        <i class="fa-solid text-2xl fa-bag-shopping"></i>
+      </button>
+      <button class="p-2 rounded-full hover:bg-indigo-400/40 transition">
+        <i class="fa-solid fa-bell text-white text-2xl"></i>
+      </button>
+
+      <button id="menu-btn" class="block md:hidden p-2 rounded hover:bg-indigo-400/40 transition">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </section>
+
+    <nav id="mobile-menu"
+      class="hidden absolute top-full left-0 w-full bg-[#111827]/95 flex flex-col items-center space-y-4 py-6 text-lg font-medium md:hidden z-50">
+      <a href="index.html" class="hover:text-pink-400 transition">Inicio</a>
+      <a href="sobrenosotros.html" class="hover:text-pink-400 transition">Sobre Nosotros</a>
+      <a href="tienda.html" class="hover:text-pink-400 transition">Tienda</a>
+      <a href="servicios.html" class="hover:text-pink-400 transition">Servicios</a>
+      <a href="contactanos.html" class="hover:text-pink-400 transition">Contactanos</a>
+    </nav>
+  </header>
+
+    <section
+        class="min-h-[10vh]  flex flex-col md:flex-row items-center justify-center gap-10 p-10 md:py-0 px-8  text-white">
+
+
+        <section class="relative flex justify-center md:justify-end">
+            <section class="absolute -bottom-10 w-72 h-72 bg-pink-500/30 blur-[100px] rounded-full -z-10"></section>
+            <img src="servicio.png" alt="Asesor" class="w-64 md:w-80 relative z-10">
+        </section>
+
+
+        <section class="space-y-5 text-center md:text-left max-w-lg md:pl-6">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+                Escoge tu servicio o consulta lo que necesites
+            </h1>
+            <p class="text-lg text-white/90">
+                Reparamos, personalizamos y te ayudamos a elegir el mejor celular o accesorio. Todo con garantía y
+                atención profesional.
+            </p>
+            <section class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+
+                <a href="https://wa.me/57XXXXXXXXXX" target="_blank"
+                    class="bg-white/20 border border-white/30 px-6 py-3 rounded-xl hover:bg-pink-600 transition">
+                    Explora nuestros servicios
+                </a>
+            </section>
+        </section>
+    </section>
+    <section class="mb-20 py-0 px-8 relative">
+
+        <div class="absolute inset-0 w-full to-transparent animate-pulse opacity-10"></div>
+
+        <h2 class="text-4xl font-extrabold text-center mb-12">
+            Nuestros <span class="text-pink-400">Servicios</span>
+        </h2>
+
+        <section class="grid md:grid-cols-5 gap-6 max-w-6xl mx-auto relative z-10">
+
+
+            <div
+                class="group col-span-2 md:col-span-2 relative rounded-2xl p-8 flex flex-col justify-between shadow-lg backdrop-blur-md bg-white/10 border border-white/20 hover:scale-[1.03] transition overflow-hidden">
+
+                <h3 class="text-2xl font-semibold mb-3 text-white">Reparación y Mantenimiento</h3>
+                <p class="text-gray-200 mb-4">Solucionamos fallas de hardware, software y limpieza interna con garantía
+                    total.</p>
+                <a href="#" target="_blank"
+                    class="inline-block text-sm font-semibold text-pink-400 hover:text-pink-300 transition">Agendar <i
+                        class="fa-brands fa-whatsapp ml-1"></i></a>
+            </div>
+
+
+            <div
+                class="col-span-2 md:col-span-1 group rounded-2xl p-8 flex flex-col justify-between shadow-lg backdrop-blur-md bg-pink-500/20 border border-pink-300/20 hover:scale-[1.03] transition overflow-hidden">
+
+                <h3 class="text-2xl font-semibold mb-3 text-white">Cambio de Pantalla</h3>
+                <p class="text-gray-200 mb-4">Reemplazo profesional de pantallas rotas o dañadas. ¡Tu celular como
+                    nuevo!</p>
+                <a href="#" target="_blank"
+                    class="inline-block text-sm font-semibold text-white hover:text-pink-200 transition">Agendar <i
+                        class="fa-brands fa-whatsapp ml-1"></i></a>
+            </div>
+
+
+            <div
+                class="col-span-2 md:col-span-2 rounded-2xl p-8 flex flex-col justify-between shadow-lg backdrop-blur-md bg-blue-500/20 border border-blue-300/20 hover:scale-[1.03] transition overflow-hidden">
+
+                <h3 class="text-2xl font-semibold mb-3 text-white">Diagnóstico Gratuito</h3>
+                <p class="text-gray-200 mb-4">Revisamos tu dispositivo sin costo para identificar el problema antes de
+                    cualquier reparación.</p>
+                <a href="#" target="_blank"
+                    class="inline-block text-sm font-semibold text-blue-200 hover:text-blue-100 transition">
+                    Agendar <i class="fa-brands fa-whatsapp ml-1"></i>
+                </a>
+            </div>
+
+
+            <div
+                class="group col-span-2 md:col-span-2 relative rounded-2xl p-8 flex flex-col justify-between shadow-lg backdrop-blur-md bg-yellow-400/20 border border-yellow-200/20 hover:scale-[1.03] transition overflow-hidden">
+
+                <h3 class="text-2xl font-semibold mb-3 text-white">Venta de Accesorios</h3>
+                <p class="text-gray-200 mb-4">Protectores, cargadores, fundas y todo lo que necesitas para tu equipo.
+                </p>
+                <a href="tienda.html"
+                    class="inline-block text-sm font-semibold text-yellow-100 hover:text-yellow-50 transition">
+                    Ver tienda <i class="fa-solid fa-bag-shopping ml-1"></i>
+                </a>
+            </div>
+
+
+            <div
+                class="group col-span-2 md:col-span-1 rounded-2xl p-8 flex flex-col justify-between shadow-lg backdrop-blur-md bg-green-500/20 border border-green-300/20 hover:scale-[1.03] transition overflow-hidden">
+
+                <h3 class="text-2xl font-semibold mb-3 text-white">Asesoría Personalizada</h3>
+                <p class="text-gray-200 mb-4">Te ayudamos a elegir el mejor celular o accesorio según tus necesidades.
+                </p>
+                <a href="#" target="_blank"
+                    class="inline-block text-sm font-semibold text-green-100 hover:text-green-50 transition">Agendar <i
+                        class="fa-brands fa-whatsapp ml-1"></i></a>
+            </div>
+
+
+            <div
+                class="group col-span-2 md:col-span-2 relative rounded-2xl p-8 flex flex-col justify-between shadow-lg backdrop-blur-md bg-white/10 border border-white/20 hover:scale-[1.03] transition overflow-hidden">
+
+                <h3 class="text-2xl font-semibold mb-3 text-white">Compra y Venta de Usados</h3>
+                <p class="text-gray-200 mb-4">Vendemos equipos certificados y compramos tu usado al mejor precio.</p>
+                <a href="#" target="_blank"
+                    class="inline-block text-sm font-semibold text-pink-300 hover:text-pink-200 transition">Cotizar <i
+                        class="fa-brands fa-whatsapp ml-1"></i></a>
+            </div>
+
+        </section>
+    </section>
+    <footer class=" text-white py-3 px-20 flex flex-col md:flex-row items-center justify-between gap-10">
+
+
+        <section class="flex flex-col items-center md:items-start text-center md:text-left">
+            <img src="logof1.png" alt="CellPoint Logo" class="w-20 h-20 mb-2">
+        </section>
+
+        <section class="flex flex-row gap-5">
+            <a href="#"
+                class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+                <i class="fab fa-instagram text-white text-2xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+                <i class="fab fa-facebook text-white text-2xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+                <i class="fab fa-x-twitter text-white text-2xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white/20 hover:bg-white/30 w-10 h-10 flex items-center justify-center rounded-full transition">
+                <i class="fab fa-tiktok text-white text-2xl"></i>
+            </a>
+        </section>
+
+        <section class="hidden md:block w-px h-20 bg-white/40"></section>
+
+
+        <section class="text-center md:text-left leading-relaxed">
+            <p><span class="font-semibold">Teléfono:</span> +57 601 456 7890</p>
+            <p><span class="font-semibold">WhatsApp:</span> +57 320 987 6543</p>
+            <p><span class="font-semibold">Correo:</span> soporte@cellpoint.com</p>
+            <p><span class="font-semibold">Dirección:</span> Calle 100 #15-30, Bogotá, Colombia</p>
+        </section>
+
+        <section class=" text-center text-white/70 text-xs py-3">
+            © 2025 CellPoint — Todos los derechos reservados.
+        </section>
+    </footer>
+
+     <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+</html>
